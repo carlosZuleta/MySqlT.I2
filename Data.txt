@@ -1,0 +1,11 @@
+Ciudad{id=''E4AA04F6-3DD0-11ED-B878-0242AC120022'', name=' 'CALI'', countryId=' '6EC3E8EC-3DD0-11ED-B878-0242AC120002'', population=4}
+Pais{id=''6EC3E8EC-3DD0-11ED-B878-0242AC120002'', name=' 'COLOMBIA'', population=23.2, countryCode=' '+57''}
+Pais{id=''9EC3E8EC-3DD0-11ED-B878-0242AC120002'', name=' 'MEXICO'', population=34.2, countryCode=' '+87''}
+Pais{id=''10EC3E8EC-3DD0-11ED-B878-0242AC120002'', name=' 'POLONIA'', population=24.2, countryCode=' '+58''}
+Pais{id=''1EC3E8EC-3DD0-11ED-B878-0242AC120002'', name=' 'FRANCIA'', population=12.2, countryCode=' '+52''}
+Pais{id=''2EC3E8EC-3DD0-11ED-B878-0242AC120002'', name=' 'COLOMBIA'', population=45.2, countryCode=' '+77''}
+Ciudad{id=''E4AA04F6-3DD0-11ED-B878-0242AC120022'', name=' 'CALI'', countryId=' '6EC3E8EC-3DD0-11ED-B878-0242AC120002'', population=4}
+Ciudad{id=''E4AA04F6-3DD0-11ED-B878-0242AC120021'', name=' 'FONIX'', countryId=' '9EC3E8EC-3DD0-11ED-B878-0242AC120002'', population=8}
+Ciudad{id=''E4AA04F6-3DD0-11ED-B878-0242AC120023'', name=' 'BOLERA'', countryId=' '10EC3E8EC-3DD0-11ED-B878-0242AC120002'', population=6}
+Ciudad{id=''E4AA04F6-3DD0-11ED-B878-0242AC120025'', name=' 'CARTAG'', countryId=' '1EC3E8EC-3DD0-11ED-B878-0242AC120002'', population=5}
+Ciudad{id=''E4AA04F6-3DD0-11ED-B878-0242AC120026'', name=' 'FRONA'', countryId=' '2EC3E8EC-3DD0-11ED-B878-0242AC120002'', population=3}

@@ -1,8 +1,6 @@
 package model;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -132,14 +130,60 @@ public class ControlSystemInformation {
     }
 
     public void listarpaises(){
-        for(int i=0;i<countrys.size();i++){
-            System.out.println("[" + countrys.get(i).getName()+"]\n");
+        try{
+            FileReader fr = new FileReader("Data.txt");
+            BufferedReader br = new BufferedReader(fr);
+            String comando;
+
+            while((comando=br.readLine())!=null){
+
+                String posibles1 = "PAIS";
+                String posibles2 = "CIUDAD";
+                String aux = comando;
+                aux = aux.toUpperCase();
+
+                String[] comando1= aux.split("\\{");
+                String fisrtP = comando1[0];
+                if(fisrtP.equals(posibles1)){
+                    System.out.println(comando);
+                }
+
+            }
+
+        }catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
+
+
     }
 
     public void listarCiudades(){
-        for(int i=0;i<citys.size();i++){
-            System.out.println("[" + citys.get(i).getName()+"]\n");
+        try{
+            FileReader fr = new FileReader("Data.txt");
+            BufferedReader br = new BufferedReader(fr);
+            String comando;
+
+            while((comando=br.readLine())!=null){
+
+                String posibles1 = "PAIS";
+                String posibles2 = "CIUDAD";
+                String aux = comando;
+                aux = aux.toUpperCase();
+
+                String[] comando1= aux.split("\\{");
+                String fisrtP = comando1[0];
+                if(fisrtP.equals(posibles2)){
+                    System.out.println(comando);
+                }
+
+            }
+
+        }catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 
