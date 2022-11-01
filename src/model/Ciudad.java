@@ -7,6 +7,16 @@ public class Ciudad implements Comparable<Ciudad> {
     private String countryId;
     private Integer population;
 
+    @Override
+    public String toString() {
+        return "Ciudad{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", countryId='" + countryId + '\'' +
+                ", population=" + population +
+                '}';
+    }
+
     public Ciudad(String id, String name, String countryId, Integer population) {
         this.id = id;
         this.name = name;

@@ -1,5 +1,8 @@
 package model;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -60,11 +63,14 @@ public class ControlSystemInformation {
 
         countrys.add(p);
 
+        guardarPaisEnArchivoTxt(p);
+
+
         return p;
     }
 
 
-    public boolean agregarCiudad(String comando){
+    public Ciudad agregarCiudad(String comando){
         String aux = comando;
         aux = aux.toUpperCase();
 
@@ -91,11 +97,12 @@ public class ControlSystemInformation {
             if(id.equals(aux6)){
                 Ciudad c = new Ciudad(comando4[0],comando4[1],comando4[2],population);
                 citys.add(c);
-                return true;
+                guardarCiudadEnArchivoTxt(c);
+                return c;
             }
         }
 
-        return false;
+        return null;
     }
 
     public void verifyComandoBuscar(String comando){
@@ -136,7 +143,37 @@ public class ControlSystemInformation {
         }
     }
 
+    public static void guardarCiudadEnArchivoTxt(Ciudad ciudad){
+        String texto = ciudad.toString();
+        FileWriter fichero;
+        PrintWriter pw;
+        try {
+            fichero = new FileWriter("Data.txt",true);
+            pw = new PrintWriter(fichero);
+            pw.println(texto);
+            pw.close();
+            fichero.close();
+        }catch(Exception e){
+            System.out.println("error de archivo");
+        }
 
+    }
+
+    public static void guardarPaisEnArchivoTxt(Pais pais){
+        String texto = pais.toString();
+        FileWriter fichero;
+        PrintWriter pw;
+        try {
+            fichero = new FileWriter("Data.txt",true);
+            pw = new PrintWriter(fichero);
+            pw.println(texto);
+            pw.close();
+            fichero.close();
+        }catch(Exception e){
+            System.out.println("error de archivo");
+        }
+
+    }
 
 
 
